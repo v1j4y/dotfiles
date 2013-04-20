@@ -17,6 +17,7 @@ if [ "$TERM" != "dumb" ]; then
     if [[ $platform == 'linux' ]]; then
         eval "`dircolors -b`" 
         alias ls='ls --color=auto'
+        alias sl='ls --color=auto'
     elif [[ $platform == 'darwin' ]]; then
         alias ls='ls -G'
     fi
@@ -155,6 +156,8 @@ fi
 export QUILT_PATCHES=debian/patches
 
 alias grep='grep --color'
+alias lsd='ls -ltrh'
+alias lds='ls -ltrh'
 export EDITOR=vim
 
 

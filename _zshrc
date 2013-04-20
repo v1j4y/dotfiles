@@ -10,7 +10,7 @@ export PROJECTS=$HOME/Code
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="curiel"
+export ZSH_THEME="random"
 
 # PATH
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:/usr/games
@@ -43,4 +43,11 @@ export PIP_RESPECT_VIRTUALENV=true
 # use .localrc for settings specific to one system
 [[ -f $HOME/.localrc ]] && . $HOME/.localrc
 
+alias lsd='ls -ltrh'
+alias lds='ls -ltrh'
+alias sl='ls --color=auto'
 
+# sourcing and adding path for ifort
+
+source /opt/intel/composerxe/bin/compilervars.sh intel64
+export PATH=$PATH:/opt/intel/bin/
